@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <li *ngFor="let usuario of this.usuarios" [routerLink]="['usuario']">
+            <span>{{ usuario.name }}</span>
+        </li>
+    </ul>
+</div>

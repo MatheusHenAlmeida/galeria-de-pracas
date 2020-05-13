@@ -9,14 +9,4 @@ import { IUser } from './models/IUser';
 })
 export class AppComponent {
   title = 'teste-angular';
-  private usuarios: IUser[];
-
-  constructor(private userService: UserService) {}
-
-  ngOnInit() {
-    this.userService.getUsers().subscribe((data: IUser[]) => {
-      this.usuarios = data;
-      console.log(this.usuarios);
-    });
-  }
 }

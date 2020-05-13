@@ -10,6 +10,7 @@ Este projeto foi criado para o teste em Angular para o processo seletivo da Glob
 - Refatorar lista de usuários
 - Criar alguns testes unitários
 - Criar alguns testes com o Protactor
+- Usar SessionStorage do window para salvar usuários favoritos
 
 ## Development server
 

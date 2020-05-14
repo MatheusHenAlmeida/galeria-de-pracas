@@ -4,7 +4,7 @@ Este projeto foi criado para o teste em Angular para o processo seletivo da Glob
 
 ## TODO
 
-- Criar pagina para exibir detalhes de um usuário selecionado da lista
+- ~~Criar pagina para exibir detalhes de um usuário selecionado da lista~~
 - Exibir mapa do endereço do usuário na página de detalhes
 - Inserir lib Material Angular
 - Refatorar lista de usuários

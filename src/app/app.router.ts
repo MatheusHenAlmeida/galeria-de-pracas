@@ -4,7 +4,7 @@ import { UsuarioDetalheComponent } from './components/usuario-detalhe/usuario-de
 
 const routes: Routes = [
     { path: '', component: UsuariosListaComponent },
-    { path: 'usuario', component: UsuarioDetalheComponent },
+    { path: 'usuario/:id', component: UsuarioDetalheComponent },
 ];
 
 export const AppRoutingModule = RouterModule.forRoot(routes)

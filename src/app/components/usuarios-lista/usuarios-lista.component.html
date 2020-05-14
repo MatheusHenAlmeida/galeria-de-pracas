@@ -1,6 +1,6 @@
 <div>
     <ul>
-        <li *ngFor="let usuario of this.usuarios" [routerLink]="['usuario']">
+        <li *ngFor="let usuario of this.usuarios" [routerLink]="['usuario', usuario.id]">
             <span>{{ usuario.name }}</span>
         </li>
     </ul>

@@ -1,1 +1,6 @@
-<p>usuario-detalhe works!</p>
+<div *ngIf="this.usuario != null">
+    <p>{{ this.usuario.name }}</p>
+    <p>{{ this.usuario.phone }}</p>
+    <p>{{ this.usuario.website }}</p>
+    <p>{{ this.usuario.company.name }}</p>
+</div>

@@ -13,4 +13,8 @@ export class UserService {
   getUsers() {
     return this.http.get(this.USER_URL);
   }
+
+  getUser(id: number) {
+    return this.http.get(this.USER_URL + "/" + id);
+  }
 }

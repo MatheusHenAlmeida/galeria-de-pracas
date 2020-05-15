@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app.router';
 import { UsuariosListaComponent } from './components/usuarios-lista/usuarios-lista.component';
 import { UsuarioDetalheComponent } from './components/usuario-detalhe/usuario-detalhe.component';
 import { MapComponent } from './components/map/map.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MapComponent } from './components/map/map.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    LeafletModule
+    LeafletModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

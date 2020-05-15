@@ -1,7 +1,14 @@
 <div>
     <ul>
         <li *ngFor="let usuario of this.usuarios" [routerLink]="['usuario', usuario.id]">
-            <span>{{ usuario.name }}</span>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{ usuario.name }}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{ usuario.email }}</p>
+                </mat-card-content>
+            </mat-card>
         </li>
     </ul>
 </div>

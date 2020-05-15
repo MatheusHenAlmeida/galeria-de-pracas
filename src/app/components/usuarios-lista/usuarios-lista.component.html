@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="this.usuarios != null; else loadingBar">
     <mat-grid-list cols="4" rowHeight="100px">
         <mat-grid-tile *ngFor="let usuario of this.usuarios" 
         [colspan]="4" [rowspan]="1" [routerLink]="['usuario', usuario.id]">
@@ -12,3 +12,7 @@
         </mat-grid-tile>
     </mat-grid-list>
 </div>
+
+<ng-template #loadingBar>
+    <app-loading-bar></app-loading-bar>
+</ng-template>

@@ -1,4 +1,4 @@
-<div *ngIf="this.usuario != null">
+<div *ngIf="this.usuario != null; else loadingBar">
     <p>{{ this.usuario.name }}</p>
     <p>{{ this.usuario.phone }}</p>
     <p>{{ this.usuario.website }}</p>
@@ -8,3 +8,7 @@
         [lat]="this.usuario.address.geo.lat"
         [lng]="this.usuario.address.geo.lng"></app-map>
 </div>
+
+<ng-template #loadingBar>
+    <app-loading-bar></app-loading-bar>
+</ng-template>

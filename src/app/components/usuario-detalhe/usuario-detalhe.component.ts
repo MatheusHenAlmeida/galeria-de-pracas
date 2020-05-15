@@ -20,6 +20,7 @@ export class UsuarioDetalheComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       this.id = params['id'];
       this.userService.getUser(this.id).subscribe((user: IUser) => {
+        // setTimeout(() => this.usuario = user, 5000) // Para testar o loading-bar
         this.usuario = user;
         console.log(`Rua: ${this.usuario.address.street}, Cidade: ${this.usuario.address.city}`);
       });

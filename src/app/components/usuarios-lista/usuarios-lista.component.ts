@@ -16,6 +16,7 @@ export class UsuariosListaComponent implements OnInit {
 
   ngOnInit() {
     this.userService.getUsers().subscribe((data: IUser[]) => {
+      // setTimeout(() => this.usuarios = data, 5000) // Para testar o loading-bar
       this.usuarios = data;
     });
     this.sharedService.emitChange({ "titulo" : "Lista de usuários" });

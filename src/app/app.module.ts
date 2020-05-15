@@ -13,13 +13,16 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider'; 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { LoadingBarComponent } from './components/loading-bar/loading-bar.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuariosListaComponent,
     UsuarioDetalheComponent,
-    MapComponent
+    MapComponent,
+    LoadingBarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatDividerModule,
     MatGridListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

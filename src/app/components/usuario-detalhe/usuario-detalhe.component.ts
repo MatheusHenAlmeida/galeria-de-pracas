@@ -24,8 +24,4 @@ export class UsuarioDetalheComponent implements OnInit {
       });
     });
   }
-
-  ngAfterViewInit(): void {
-    
-  }
 }

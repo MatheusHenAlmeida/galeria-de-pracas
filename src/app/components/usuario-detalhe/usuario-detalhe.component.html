@@ -1,14 +1,21 @@
-<div *ngIf="this.usuario != null; else loadingBar">
-    <p>{{ this.usuario.name }}</p>
-    <p>{{ this.usuario.phone }}</p>
-    <p>{{ this.usuario.website }}</p>
-    <p>{{ this.usuario.company.name }}</p>
-
-    <app-map 
-        [lat]="this.usuario.address.geo.lat"
-        [lng]="this.usuario.address.geo.lng"></app-map>
+<div class="container">
+    <div *ngIf="this.usuario != null; else loadingBar" class="formato-conteudo">
+        <mat-card class="card-format">
+            <mat-card-title>{{ this.usuario.name }}</mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <p>{{ this.usuario.phone }}</p>
+                <p>{{ this.usuario.website }}</p>
+                <p>{{ this.usuario.company.name }}</p>
+                <app-map 
+                [lat]="this.usuario.address.geo.lat"
+                [lng]="this.usuario.address.geo.lng"></app-map>
+            </mat-card-content>
+        </mat-card>
+        
+    </div>
 </div>
-
-<ng-template #loadingBar>
-    <app-loading-bar></app-loading-bar>
-</ng-template>
+    
+    <ng-template #loadingBar>
+        <app-loading-bar></app-loading-bar>
+    </ng-template>

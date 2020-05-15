@@ -10,7 +10,7 @@ import { ThrowStmt } from '@angular/compiler';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  titulo = 'teste-angular';
+  titulo = 'Lista de usuários';
 
   constructor(private sharedService: SharedService) {
     this.sharedService.changeEmitted$.subscribe((data) => this.titulo = data.titulo);

@@ -4,9 +4,9 @@
             <mat-card-title>{{ this.usuario.name }}</mat-card-title>
             <mat-divider></mat-divider>
             <mat-card-content>
-                <p>{{ this.usuario.phone }}</p>
-                <p>{{ this.usuario.website }}</p>
-                <p>{{ this.usuario.company.name }}</p>
+                <p>Telefone: {{ this.usuario.phone }}</p>
+                <p>Site: {{ this.usuario.website }}</p>
+                <p>Companhia: {{ this.usuario.company.name }}</p>
                 <app-map 
                 [lat]="this.usuario.address.geo.lat"
                 [lng]="this.usuario.address.geo.lng"></app-map>

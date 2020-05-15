@@ -8,7 +8,7 @@ Este projeto foi criado para o teste em Angular para o processo seletivo da Glob
 - ~~Exibir mapa do endereço do usuário na página de detalhes~~
 - ~~Inserir lib Material Angular~~
 - ~~Refatorar lista de usuários~~
-- Refatorar tela de detalhe do usuário
+- ~~Refatorar tela de detalhe do usuário~~
 - Criar alguns testes unitários
 - Criar alguns testes com o Protactor
 - Usar SessionStorage do window para salvar usuários favoritos

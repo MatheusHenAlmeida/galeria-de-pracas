@@ -10,6 +10,9 @@ import { UsuarioDetalheComponent } from './components/usuario-detalhe/usuario-de
 import { MapComponent } from './components/map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider'; 
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     LeafletModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

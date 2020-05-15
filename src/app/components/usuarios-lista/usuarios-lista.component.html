@@ -1,14 +1,13 @@
 <div>
-    <ul>
-        <li *ngFor="let usuario of this.usuarios" [routerLink]="['usuario', usuario.id]">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title>{{ usuario.name }}</mat-card-title>
-                </mat-card-header>
+    <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile *ngFor="let usuario of this.usuarios" [colspan]="4" [rowspan]="1" [style.background]="">
+            <mat-card class="card-format">
+                <mat-card-title>{{ usuario.name }}</mat-card-title>
+                <mat-divider></mat-divider>
                 <mat-card-content>
                     <p>{{ usuario.email }}</p>
                 </mat-card-content>
             </mat-card>
-        </li>
-    </ul>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

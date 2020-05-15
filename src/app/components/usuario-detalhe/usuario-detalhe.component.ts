@@ -11,7 +11,6 @@ import { IUser } from 'src/app/models/IUser';
 export class UsuarioDetalheComponent implements OnInit {
   id: number;
   usuario: IUser = null;
-  // private map;
 
   constructor(private activatedRoute: ActivatedRoute,
     private userService: UserService) { }
@@ -21,7 +20,7 @@ export class UsuarioDetalheComponent implements OnInit {
       this.id = params['id'];
       this.userService.getUser(this.id).subscribe((user: IUser) => {
         this.usuario = user;
-        // this.initMap();
+        console.log(`Rua: ${this.usuario.address.street}, Cidade: ${this.usuario.address.city}`);
       });
     });
   }
@@ -29,18 +28,4 @@ export class UsuarioDetalheComponent implements OnInit {
   ngAfterViewInit(): void {
     
   }
-
-  // private initMap(): void {
-  //   this.map = L.map('map', {
-  //     center: [39.8282, -98.5795],
-  //     zoom: 3
-  //   });
-
-  //   const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  //     maxZoom: 19,
-  //     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  //   });
-
-  //   tiles.addTo(this.map);
-  // }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 declare let L;
 
 @Component({
@@ -7,16 +7,21 @@ declare let L;
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  constructor() { 
+  @Input() lat: string;
+  @Input() lng: string;
+
+  constructor() {
   }
 
   ngOnInit() {
-    const map = L.map('map').setView([51.505, -0.09], 13);
+    let lng = parseFloat(this.lng);
+    let lat = parseFloat(this.lat);
+    const map = L.map('map').setView([lat, lng], 13);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-        L.marker([51.5, -0.09]).addTo(map);
+    L.marker([lat, lng]).addTo(map);
   }
 }

@@ -4,6 +4,7 @@
     <p>{{ this.usuario.website }}</p>
     <p>{{ this.usuario.company.name }}</p>
 
+    <app-map 
+        [lat]="this.usuario.address.geo.lat"
+        [lng]="this.usuario.address.geo.lng"></app-map>
 </div>
-
-<app-map></app-map>

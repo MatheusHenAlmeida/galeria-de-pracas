@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, EventEmitter, Output, Input } from '@
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { IUser } from 'src/app/models/IUser';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-usuario-detalhe',
@@ -13,7 +14,7 @@ export class UsuarioDetalheComponent implements OnInit {
   usuario: IUser = null;
 
   constructor(private activatedRoute: ActivatedRoute,
-    private userService: UserService) { }
+    private userService: UserService, private sharedService: SharedService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -23,5 +24,7 @@ export class UsuarioDetalheComponent implements OnInit {
         console.log(`Rua: ${this.usuario.address.street}, Cidade: ${this.usuario.address.city}`);
       });
     });
+
+    this.sharedService.emitChange({ "titulo" : "Detalhes do usuário" });
   }
 }

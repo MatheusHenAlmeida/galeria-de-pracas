@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { IUser } from 'src/app/models/IUser';
 import { UserService } from 'src/app/services/user.service';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-usuarios-lista',
@@ -11,11 +12,12 @@ export class UsuariosListaComponent implements OnInit {
 
   usuarios: IUser[];
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private sharedService: SharedService) {}
 
   ngOnInit() {
     this.userService.getUsers().subscribe((data: IUser[]) => {
       this.usuarios = data;
     });
+    this.sharedService.emitChange({ "titulo" : "Lista de usuários" });
   }
 }

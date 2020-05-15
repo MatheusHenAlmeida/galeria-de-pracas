@@ -1,6 +1,7 @@
 <div>
     <mat-grid-list cols="4" rowHeight="100px">
-        <mat-grid-tile *ngFor="let usuario of this.usuarios" [colspan]="4" [rowspan]="1" [style.background]="">
+        <mat-grid-tile *ngFor="let usuario of this.usuarios" 
+        [colspan]="4" [rowspan]="1" [routerLink]="['usuario', usuario.id]">
             <mat-card class="card-format">
                 <mat-card-title>{{ usuario.name }}</mat-card-title>
                 <mat-divider></mat-divider>

@@ -7,4 +7,4 @@ const routes: Routes = [
     { path: 'usuario/:id', component: UsuarioDetalheComponent },
 ];
 
-export const AppRoutingModule = RouterModule.forRoot(routes)
+export const AppRoutingModule = RouterModule.forRoot(routes);

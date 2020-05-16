@@ -18,7 +18,7 @@ describe('UsuariosListaComponent', () => {
     userService.getUsers.and.returnValue(mockUser);
     sharedService = jasmine.createSpyObj(['emitChange']);
     TestBed.configureTestingModule({
-      providers:[
+      providers: [
         { provide: UserService, useValue: userService },
         { provide: SharedService, useValue: sharedService }
       ],

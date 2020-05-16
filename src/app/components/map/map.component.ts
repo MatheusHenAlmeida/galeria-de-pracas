@@ -14,8 +14,8 @@ export class MapComponent implements OnInit {
   }
 
   ngOnInit() {
-    let lng = parseFloat(this.lng);
-    let lat = parseFloat(this.lat);
+    const lng = parseFloat(this.lng);
+    const lat = parseFloat(this.lat);
     const map = L.map('map').setView([lat, lng], 13);
     // const map = L.map('map').setView([-23.626482, -46.557280], 18); // Para testar zoom do mapa
 

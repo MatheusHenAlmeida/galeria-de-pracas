@@ -26,6 +26,6 @@ export class UsuarioDetalheComponent implements OnInit {
       });
     });
 
-    this.sharedService.emitChange({ "titulo" : "Detalhes do usuário" });
+    this.sharedService.emitChange({ titulo : 'Detalhes do usuário' });
   }
 }

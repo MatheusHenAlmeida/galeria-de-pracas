@@ -19,6 +19,6 @@ export class UsuariosListaComponent implements OnInit {
       // setTimeout(() => this.usuarios = data, 5000) // Para testar o loading-bar
       this.usuarios = data;
     });
-    this.sharedService.emitChange({ "titulo" : "Lista de usuários" });
+    this.sharedService.emitChange({ titulo : 'Lista de usuários' });
   }
 }

@@ -13,12 +13,11 @@ describe('UsuarioDetalheComponent', () => {
   let fixture: ComponentFixture<UsuarioDetalheComponent>;
   let userService;
   let sharedService;
-  let mockedUser = {} as IUser;
 
   beforeEach(async(() => {
     userService = jasmine.createSpyObj(['getUser']);
     sharedService = mock(SharedService);
-    let response = new Observable(() => null);
+    const response = new Observable(() => null);
     userService.getUser.and.returnValue(response);
     TestBed.configureTestingModule({
       declarations: [ UsuarioDetalheComponent ],
@@ -26,7 +25,7 @@ describe('UsuarioDetalheComponent', () => {
         {
           provide: ActivatedRoute,
           useValue: {
-            params: new Observable(() => {id: 1})
+            params: new Observable(() => { id: 1 })
           }
         },
         { provide: UserService, useValue: userService },
@@ -47,7 +46,7 @@ describe('UsuarioDetalheComponent', () => {
   });
 
   it('should emit a new title', () => {
-      verify(sharedService.emitChange(anything())).called()
+      verify(sharedService.emitChange(anything())).called();
       expect(component.usuario).toBeNull();
   });
 });

@@ -29,8 +29,8 @@ describe('AppComponent', () => {
   });
 
   it('should change the title, when emitter trigger new data', () => {
-    sharedService.emitChange({ titulo: "teste" });
-    expect(appComponent.titulo).toBe("teste");
+    sharedService.emitChange({ titulo: 'teste' });
+    expect(appComponent.titulo).toBe('teste');
   });
 
   afterEach(() => {

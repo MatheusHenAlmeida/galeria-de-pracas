@@ -1,29 +1,17 @@
-# TesteAngular
+# Teste Angular
 
 Este projeto foi criado para o teste em Angular para o processo seletivo da GlobalTI.
 
-## TODO
+## Como rodar a aplicação
 
-- ~~Criar pagina para exibir detalhes de um usuário selecionado da lista~~
-- ~~Exibir mapa do endereço do usuário na página de detalhes~~
-- ~~Inserir lib Material Angular~~
-- ~~Refatorar lista de usuários~~
-- ~~Refatorar tela de detalhe do usuário~~
-- ~~Criar alguns testes unitários~~
-- Usar SessionStorage do window para salvar usuários favoritos
+Para rodar a aplicação pelo primeira vez, é preciso seguir os passos abaixo, dentro do diretório principal do projeto:
 
-## Development server
+1. Rodar o `npm install` para instalar todas as depedências do projeto
+2. Verificar se os endpoints estão em pé
+3. Dar o comando `ng serve -o` para buildar a aplicação e abrir o navegador na página principal
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Para rodar os testes unitários
 
-## Build
+Baste se rodar o comando `ng test` no diretório do projeto, que ele abrirá uma janela do firefox para abrir o Karma, com o resultado de todos os testes unitários.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    

@@ -9,8 +9,7 @@ Este projeto foi criado para o teste em Angular para o processo seletivo da Glob
 - ~~Inserir lib Material Angular~~
 - ~~Refatorar lista de usuários~~
 - ~~Refatorar tela de detalhe do usuário~~
-- Criar alguns testes unitários
-- Criar alguns testes com o Protactor
+- ~~Criar alguns testes unitários~~
 - Usar SessionStorage do window para salvar usuários favoritos
 
 ## Development server

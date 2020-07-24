@@ -1,0 +1,69 @@
+{
+    "pracas" : [
+        {
+            "name": "Grand-Place",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Bruxelas",
+                "country": "Bélgica",
+                "geo": {
+                    "lat": "",
+                    "lng": ""
+                }
+            }
+        },
+        {
+            "name": "Praça Victor Civita",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "São Paulo",
+                "country": "Brasil",
+                "geo": {
+                    "lat": "",
+                    "lng": ""
+                }
+            }
+        },
+        {
+            "name": "Praça do Comércio",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Lisboa",
+                "country": "Portugal",
+                "geo": {
+                    "lat": "",
+                    "lng": ""
+                }
+            }
+        },
+        {
+            "name": "Plaza de Mayo",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Buenos Aires",
+                "country": "Argentina",
+                "geo": {
+                    "lat": "",
+                    "lng": ""
+                }
+            }
+        },
+        {
+            "name": "Jardin Du Luxembourg",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Paris",
+                "country": "França",
+                "geo": {
+                    "lat": "",
+                    "lng": ""
+                }
+            }
+        }
+    ]
+}

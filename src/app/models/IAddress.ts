@@ -1,9 +1,8 @@
 import { IGeo } from './IGeo';
 
 export interface IAddress {
-    street: string;
-    suite: string;
+    address: string;
     city: string;
-    zipcode: string;
+    country: string;
     geo: IGeo;
 }

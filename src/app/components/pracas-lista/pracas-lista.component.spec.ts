@@ -1,14 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { mock, verify, anything } from 'ts-mockito';
 
-import { UsuariosListaComponent } from './usuarios-lista.component';
+import { PracasListaComponent } from './pracas-lista.component';
 import { UserService } from 'src/app/services/user.service';
 import { SharedService } from 'src/app/services/shared.service';
 import { Observable } from 'rxjs';
 
-describe('UsuariosListaComponent', () => {
-  let component: UsuariosListaComponent;
-  let fixture: ComponentFixture<UsuariosListaComponent>;
+describe('PracasListaComponent', () => {
+  let component: PracasListaComponent;
+  let fixture: ComponentFixture<PracasListaComponent>;
   let userService;
   let sharedService;
 
@@ -22,13 +22,13 @@ describe('UsuariosListaComponent', () => {
         { provide: UserService, useValue: userService },
         { provide: SharedService, useValue: sharedService }
       ],
-      declarations: [ UsuariosListaComponent ]
+      declarations: [ PracasListaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UsuariosListaComponent);
+    fixture = TestBed.createComponent(PracasListaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

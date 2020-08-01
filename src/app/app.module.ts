@@ -5,7 +5,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
-import { UsuariosListaComponent } from './components/usuarios-lista/usuarios-lista.component';
+import { PracasListaComponent } from './components/pracas-lista/pracas-lista.component';
 import { UsuarioDetalheComponent } from './components/usuario-detalhe/usuario-detalhe.component';
 import { MapComponent } from './components/map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +19,7 @@ import { LoadingBarComponent } from './components/loading-bar/loading-bar.compon
 @NgModule({
   declarations: [
     AppComponent,
-    UsuariosListaComponent,
+    PracasListaComponent,
     UsuarioDetalheComponent,
     MapComponent,
     LoadingBarComponent

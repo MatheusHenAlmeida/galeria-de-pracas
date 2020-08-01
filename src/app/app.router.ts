@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
-import { UsuariosListaComponent } from './components/usuarios-lista/usuarios-lista.component';
+import { PracasListaComponent } from './components/pracas-lista/pracas-lista.component';
 import { UsuarioDetalheComponent } from './components/usuario-detalhe/usuario-detalhe.component';
 
 const routes: Routes = [
-    { path: '', component: UsuariosListaComponent },
+    { path: '', component: PracasListaComponent },
     { path: 'praca/:id', component: UsuarioDetalheComponent },
 ];
 

@@ -4,11 +4,11 @@ import { UserService } from 'src/app/services/user.service';
 import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
-  selector: 'app-usuarios-lista',
-  templateUrl: './usuarios-lista.component.html',
-  styleUrls: ['./usuarios-lista.component.scss']
+  selector: 'app-pracas-lista',
+  templateUrl: './pracas-lista.component.html',
+  styleUrls: ['./pracas-lista.component.scss']
 })
-export class UsuariosListaComponent implements OnInit {
+export class PracasListaComponent implements OnInit {
 
   pracas: IPraca[];
 

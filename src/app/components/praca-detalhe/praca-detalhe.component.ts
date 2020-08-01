@@ -1,15 +1,15 @@
-import { Component, OnInit, AfterViewInit, EventEmitter, Output, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { IPraca } from 'src/app/models/IPraca';
 import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
-  selector: 'app-usuario-detalhe',
-  templateUrl: './usuario-detalhe.component.html',
-  styleUrls: ['./usuario-detalhe.component.scss']
+  selector: 'app-praca-detalhe',
+  templateUrl: './praca-detalhe.component.html',
+  styleUrls: ['./praca-detalhe.component.scss']
 })
-export class UsuarioDetalheComponent implements OnInit {
+export class PracaDetalheComponent implements OnInit {
   id: number;
   praca: IPraca = null;
 
@@ -26,6 +26,6 @@ export class UsuarioDetalheComponent implements OnInit {
       });
     });
 
-    this.sharedService.emitChange({ titulo : 'Detalhes do usuário' });
+    this.sharedService.emitChange({ titulo : 'Detalhes da Praça' });
   }
 }

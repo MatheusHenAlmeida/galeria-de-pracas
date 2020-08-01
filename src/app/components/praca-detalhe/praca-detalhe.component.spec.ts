@@ -1,16 +1,16 @@
 import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 
-import { UsuarioDetalheComponent } from './usuario-detalhe.component';
+import { PracaDetalheComponent } from './praca-detalhe.component';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { IUser } from 'src/app/models/IUser';
-import { mock, verify, anything, instance, when } from 'ts-mockito';
+import { IPraca } from 'src/app/models/IPraca';
+import { mock, verify, anything, instance } from 'ts-mockito';
 import { UserService } from 'src/app/services/user.service';
 import { SharedService } from 'src/app/services/shared.service';
 
-describe('UsuarioDetalheComponent', () => {
-  let component: UsuarioDetalheComponent;
-  let fixture: ComponentFixture<UsuarioDetalheComponent>;
+describe('PracaDetalheComponent', () => {
+  let component: PracaDetalheComponent;
+  let fixture: ComponentFixture<PracaDetalheComponent>;
   let userService;
   let sharedService;
 
@@ -20,7 +20,7 @@ describe('UsuarioDetalheComponent', () => {
     const response = new Observable(() => null);
     userService.getUser.and.returnValue(response);
     TestBed.configureTestingModule({
-      declarations: [ UsuarioDetalheComponent ],
+      declarations: [ PracaDetalheComponent ],
       providers: [
         {
           provide: ActivatedRoute,
@@ -36,7 +36,7 @@ describe('UsuarioDetalheComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UsuarioDetalheComponent);
+    fixture = TestBed.createComponent(PracaDetalheComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -47,6 +47,6 @@ describe('UsuarioDetalheComponent', () => {
 
   it('should emit a new title', () => {
       verify(sharedService.emitChange(anything())).called();
-      expect(component.usuario).toBeNull();
+      expect(component.praca).toBeNull();
   });
 });

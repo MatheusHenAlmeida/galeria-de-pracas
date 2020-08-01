@@ -9,8 +9,8 @@
                 "city": "Bruxelas",
                 "country": "Bélgica",
                 "geo": {
-                    "lat": "",
-                    "lng": ""
+                    "lat": "50.8467316",
+                    "lng": "4.3502251"
                 }
             }
         },
@@ -23,8 +23,8 @@
                 "city": "São Paulo",
                 "country": "Brasil",
                 "geo": {
-                    "lat": "",
-                    "lng": ""
+                    "lat": "-23.5642757",
+                    "lng": "-46.7038622"
                 }
             }
         },
@@ -37,8 +37,8 @@
                 "city": "Lisboa",
                 "country": "Portugal",
                 "geo": {
-                    "lat": "",
-                    "lng": ""
+                    "lat": "38.707532",
+                    "lng": "-9.1364489"
                 }
             }
         },
@@ -51,8 +51,8 @@
                 "city": "Buenos Aires",
                 "country": "Argentina",
                 "geo": {
-                    "lat": "",
-                    "lng": ""
+                    "lat": "-34.6083306",
+                    "lng": "-58.3738469"
                 }
             }
         },
@@ -65,8 +65,8 @@
                 "city": "Paris",
                 "country": "França",
                 "geo": {
-                    "lat": "",
-                    "lng": ""
+                    "lat": "48.8462217",
+                    "lng": "2.3349718"
                 }
             }
         }

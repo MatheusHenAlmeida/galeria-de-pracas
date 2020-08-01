@@ -16,7 +16,7 @@ Baste se rodar o comando `ng test` no diretório do projeto, que ele abrirá uma
 
 ## TODO
 
-1. Refatorar modelos
+1. ~~Refatorar modelos~~
 2. Refazer serviços
 3. Ajustar telas para exibir informações das praças
 4. Completar lista de praças e dados do `pracas.json`

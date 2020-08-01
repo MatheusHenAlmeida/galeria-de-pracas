@@ -6,7 +6,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
 import { PracasListaComponent } from './components/pracas-lista/pracas-lista.component';
-import { PracaDetalheComponent } from './components/usuario-detalhe/praca-detalhe.component';
+import { PracaDetalheComponent } from './components/praca-detalhe/praca-detalhe.component';
 import { MapComponent } from './components/map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';

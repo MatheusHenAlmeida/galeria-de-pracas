@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class PracasService {
   private USER_URL = environment.user_url;
   private PRACAS = '/pracas'
 

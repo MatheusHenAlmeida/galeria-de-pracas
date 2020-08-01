@@ -3,9 +3,8 @@ import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core
 import { PracaDetalheComponent } from './praca-detalhe.component';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { IPraca } from 'src/app/models/IPraca';
 import { mock, verify, anything, instance } from 'ts-mockito';
-import { UserService } from 'src/app/services/user.service';
+import { PracasService } from 'src/app/services/pracas.service';
 import { SharedService } from 'src/app/services/shared.service';
 
 describe('PracaDetalheComponent', () => {
@@ -28,7 +27,7 @@ describe('PracaDetalheComponent', () => {
             params: new Observable(() => { id: 1 })
           }
         },
-        { provide: UserService, useValue: userService },
+        { provide: PracasService, useValue: userService },
         { provide: SharedService, useFactory: () => instance(sharedService) }
       ]
     })

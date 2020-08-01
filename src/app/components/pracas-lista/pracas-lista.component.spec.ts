@@ -1,8 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { mock, verify, anything } from 'ts-mockito';
 
 import { PracasListaComponent } from './pracas-lista.component';
-import { UserService } from 'src/app/services/user.service';
+import { PracasService } from 'src/app/services/pracas.service';
 import { SharedService } from 'src/app/services/shared.service';
 import { Observable } from 'rxjs';
 
@@ -19,7 +18,7 @@ describe('PracasListaComponent', () => {
     sharedService = jasmine.createSpyObj(['emitChange']);
     TestBed.configureTestingModule({
       providers: [
-        { provide: UserService, useValue: userService },
+        { provide: PracasService, useValue: userService },
         { provide: SharedService, useValue: sharedService }
       ],
       declarations: [ PracasListaComponent ]

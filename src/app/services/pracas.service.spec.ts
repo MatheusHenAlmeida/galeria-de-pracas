@@ -1,20 +1,20 @@
 import { TestBed, inject } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { UserService } from './user.service';
+import { PracasService } from './pracas.service';
 import { environment } from '../../environments/environment';
-import { IUser } from '../models/IUser';
+import { IPraca } from '../models/IPraca';
 
 describe('UserService', () => {
-  let service: UserService;
+  let service: PracasService;
   let httpMock: HttpTestingController;
   const USER_URL = environment.user_url;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [UserService],
+      providers: [PracasService],
       imports: [HttpClientTestingModule]
     });
-    service = TestBed.inject(UserService);
+    service = TestBed.inject(PracasService);
     httpMock = TestBed.get(HttpTestingController);
   });
 
@@ -70,7 +70,7 @@ describe('UserService', () => {
       }
     }];
 
-    service.getUsers().subscribe((data: IUser[]) => {
+    service.getPracas().subscribe((data: IPraca[]) => {
       expect(data.length).toBe(2);
       expect(data[0].name).toBe('Leanne Graham');
       expect(data[1].name).toBe('Ervin Howell');
@@ -82,7 +82,7 @@ describe('UserService', () => {
   it('must return empty list', () => {
     const mockedList = [];
 
-    service.getUsers().subscribe((data: IUser[]) => {
+    service.getPracas().subscribe((data: IPraca[]) => {
       expect(data.length).toBe(0);
     });
     const req = httpMock.expectOne(USER_URL);
@@ -114,22 +114,9 @@ describe('UserService', () => {
       }
     }
 
-    service.getUser(1).subscribe((data: IUser) => {
+    service.getPraca(1).subscribe((data: IPraca) => {
       expect(data.id).toBe(1);
       expect(data.name).toBe('Leanne Graham');
-      expect(data.username).toBe('Bret');
-      expect(data.email).toBe('Sincere@april.biz');
-      expect(data.phone).toBe('1-770-736-8031 x56442');
-      expect(data.website).toBe('hildegard.org');
-      expect(data.company.name).toBe('Romaguera-Crona');
-      expect(data.company.catchPhrase).toBe('Multi-layered client-server neural-net');
-      expect(data.company.bs).toBe('harness real-time e-markets');
-      expect(data.address.city).toBe('Gwenborough');
-      expect(data.address.street).toBe('Kulas Light');
-      expect(data.address.suite).toBe('Apt. 556');
-      expect(data.address.zipcode).toBe('92998-3874');
-      expect(data.address.geo.lat).toBe('-37.3159');
-      expect(data.address.geo.lng).toBe('81.1496');
     });
     const req = httpMock.expectOne(USER_URL + '/1');
     req.flush(mockedList);
@@ -138,7 +125,7 @@ describe('UserService', () => {
   it('must return no user', () => {
     let mockedList = null;
 
-    service.getUsers().subscribe((data: IUser) => {
+    service.getPracas().subscribe((data: IPraca) => {
       expect(data).toBe(null);
     });
     const req = httpMock.expectOne(USER_URL);

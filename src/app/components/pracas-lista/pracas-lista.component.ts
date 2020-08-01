@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { IPraca } from 'src/app/models/IPraca';
-import { UserService } from 'src/app/services/user.service';
+import { PracasService } from 'src/app/services/pracas.service';
 import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class PracasListaComponent implements OnInit {
 
   pracas: IPraca[];
 
-  constructor(private pracasService: UserService, private sharedService: SharedService) {}
+  constructor(private pracasService: PracasService, private sharedService: SharedService) {}
 
   ngOnInit() {
     this.pracasService.getPracas().subscribe((data: IPraca[]) => {

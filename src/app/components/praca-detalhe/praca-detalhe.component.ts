@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { UserService } from 'src/app/services/user.service';
+import { PracasService } from 'src/app/services/pracas.service';
 import { IPraca } from 'src/app/models/IPraca';
 import { SharedService } from 'src/app/services/shared.service';
 
@@ -14,7 +14,7 @@ export class PracaDetalheComponent implements OnInit {
   praca: IPraca = null;
 
   constructor(private activatedRoute: ActivatedRoute,
-    private userService: UserService, private sharedService: SharedService) { }
+    private userService: PracasService, private sharedService: SharedService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {

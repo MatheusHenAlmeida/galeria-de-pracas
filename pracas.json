@@ -69,6 +69,76 @@
                     "lng": "2.3349718"
                 }
             }
+        },
+        {
+            "id": 5,
+            "name": "Piazza San Marco",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Veneza",
+                "country": "Itália",
+                "geo": {
+                    "lat": "45.4340482",
+                    "lng": "12.3364594"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "Praça Tiananmen",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Pequim",
+                "country": "China",
+                "geo": {
+                    "lat": "39.9054895",
+                    "lng": "116.395443"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "name": "Praça Vermelha",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Moscou",
+                "country": "Rússia",
+                "geo": {
+                    "lat": "55.7535579",
+                    "lng": "37.616533"
+                }
+            }
+        },
+        {
+            "id": 8,
+            "name": "Plaza de Armas",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Cusco",
+                "country": "Peru",
+                "geo": {
+                    "lat": "-13.5167407",
+                    "lng": "-71.9809658"
+                }
+            }
+        },
+        {
+            "id": 9,
+            "name": "Praça Naghsh-e Jahan",
+            "picture": "",
+            "location": {
+                "address": "",
+                "city": "Isfahan",
+                "country": "Irã",
+                "geo": {
+                    "lat": "32.6573067",
+                    "lng": "51.6753312"
+                }
+            }
         }
     ]
 }

@@ -7,7 +7,7 @@ import { SharedService } from './services/shared.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  titulo = 'Lista de usuários';
+  titulo = 'Galeria de Praças';
 
   constructor(private sharedService: SharedService) {
     this.sharedService.changeEmitted$.subscribe((data) => this.titulo = data.titulo);

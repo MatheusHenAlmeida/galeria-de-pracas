@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit, EventEmitter, Output, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
-import { IUser } from 'src/app/models/IUser';
+import { IPraca } from 'src/app/models/IPraca';
 import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class UsuarioDetalheComponent implements OnInit {
   id: number;
-  usuario: IUser = null;
+  usuario: IPraca = null;
 
   constructor(private activatedRoute: ActivatedRoute,
     private userService: UserService, private sharedService: SharedService) { }
@@ -19,10 +19,10 @@ export class UsuarioDetalheComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.id = params['id'];
-      this.userService.getUser(this.id).subscribe((user: IUser) => {
+      this.userService.getPraca(this.id).subscribe((user: IPraca) => {
         // setTimeout(() => this.usuario = user, 5000) // Para testar o loading-bar
         this.usuario = user;
-        console.log(`Rua: ${this.usuario.address.street}, Cidade: ${this.usuario.address.city}`);
+        // console.log(`Rua: ${this.usuario.address.street}, Cidade: ${this.usuario.address.city}`);
       });
     });
 

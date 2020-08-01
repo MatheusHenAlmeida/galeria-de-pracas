@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-import { IUser } from '../models/IUser';
+import { IPraca } from '../models/IPraca';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,14 +9,17 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
   private USER_URL = environment.user_url;
+  private PRACAS = '/pracas'
+
+  private PRACAS_URL = this.USER_URL.concat(this.PRACAS);
 
   constructor(private http: HttpClient) { }
 
-  getUsers() {
-    return this.http.get(this.USER_URL);
+  getPracas() {
+    return this.http.get(this.PRACAS_URL);
   }
 
-  getUser(id: number): Observable<IUser> {
-    return this.http.get<IUser>(this.USER_URL + '/' + id);
+  getPraca(id: number): Observable<IPraca> {
+    return this.http.get<IPraca>(this.PRACAS_URL + '/' + id);
   }
 }

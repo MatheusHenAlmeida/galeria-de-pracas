@@ -1,12 +1,12 @@
-<div *ngIf="this.usuarios != null; else loadingBar">
+<div *ngIf="this.pracas != null; else loadingBar">
     <mat-grid-list cols="4" rowHeight="100px">
-        <mat-grid-tile *ngFor="let usuario of this.usuarios" 
-        [colspan]="4" [rowspan]="1" [routerLink]="['usuario', usuario.id]">
+        <mat-grid-tile *ngFor="let praca of this.pracas" 
+        [colspan]="4" [rowspan]="1" [routerLink]="['praca', praca.id]">
             <mat-card class="card-format">
-                <mat-card-title>{{ usuario.name }}</mat-card-title>
+                <mat-card-title>{{ praca.name }}</mat-card-title>
                 <mat-divider></mat-divider>
                 <mat-card-content>
-                    <p>{{ usuario.email }}</p>
+                    <p>{{ praca.picture }}</p>
                 </mat-card-content>
             </mat-card>
         </mat-grid-tile>

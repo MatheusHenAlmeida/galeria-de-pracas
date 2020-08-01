@@ -1,6 +1,7 @@
 {
     "pracas" : [
         {
+            "id": 0,
             "name": "Grand-Place",
             "picture": "",
             "location": {
@@ -14,6 +15,7 @@
             }
         },
         {
+            "id": 1,
             "name": "Praça Victor Civita",
             "picture": "",
             "location": {
@@ -27,6 +29,7 @@
             }
         },
         {
+            "id": 2,
             "name": "Praça do Comércio",
             "picture": "",
             "location": {
@@ -40,6 +43,7 @@
             }
         },
         {
+            "id": 3,
             "name": "Plaza de Mayo",
             "picture": "",
             "location": {
@@ -53,6 +57,7 @@
             }
         },
         {
+            "id": 4,
             "name": "Jardin Du Luxembourg",
             "picture": "",
             "location": {

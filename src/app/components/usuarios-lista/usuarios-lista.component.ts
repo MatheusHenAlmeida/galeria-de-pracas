@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { IUser } from 'src/app/models/IUser';
+import { IPraca } from 'src/app/models/IPraca';
 import { UserService } from 'src/app/services/user.service';
 import { SharedService } from 'src/app/services/shared.service';
 
@@ -10,15 +10,15 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class UsuariosListaComponent implements OnInit {
 
-  usuarios: IUser[];
+  pracas: IPraca[];
 
-  constructor(private userService: UserService, private sharedService: SharedService) {}
+  constructor(private pracasService: UserService, private sharedService: SharedService) {}
 
   ngOnInit() {
-    this.userService.getUsers().subscribe((data: IUser[]) => {
-      // setTimeout(() => this.usuarios = data, 5000) // Para testar o loading-bar
-      this.usuarios = data;
+    this.pracasService.getPracas().subscribe((data: IPraca[]) => {
+      // setTimeout(() => this.pracas = data, 5000) // Para testar o loading-bar
+      this.pracas = data;
     });
-    this.sharedService.emitChange({ titulo : 'Lista de usuários' });
+    this.sharedService.emitChange({ titulo : 'Galeria de Praças' });
   }
 }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  user_url: "https://jsonplaceholder.typicode.com/users"
+  user_url: "http://localhost:3000"
 };
 
 /*

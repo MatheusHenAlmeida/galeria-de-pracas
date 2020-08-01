@@ -11,7 +11,7 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class UsuarioDetalheComponent implements OnInit {
   id: number;
-  usuario: IPraca = null;
+  praca: IPraca = null;
 
   constructor(private activatedRoute: ActivatedRoute,
     private userService: UserService, private sharedService: SharedService) { }
@@ -19,9 +19,9 @@ export class UsuarioDetalheComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.id = params['id'];
-      this.userService.getPraca(this.id).subscribe((user: IPraca) => {
+      this.userService.getPraca(this.id).subscribe((praca: IPraca) => {
         // setTimeout(() => this.usuario = user, 5000) // Para testar o loading-bar
-        this.usuario = user;
+        this.praca = praca;
         // console.log(`Rua: ${this.usuario.address.street}, Cidade: ${this.usuario.address.city}`);
       });
     });

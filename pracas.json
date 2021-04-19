@@ -5,7 +5,7 @@
             "name": "Grand-Place",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "Grote Markt, 1000",
                 "city": "Bruxelas",
                 "country": "Bélgica",
                 "geo": {
@@ -19,7 +19,7 @@
             "name": "Praça Victor Civita",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "R. Sumidouro, 580",
                 "city": "São Paulo",
                 "country": "Brasil",
                 "geo": {
@@ -47,7 +47,7 @@
             "name": "Plaza de Mayo",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "Av. Hipólito Yrigoyen s/n, C1087",
                 "city": "Buenos Aires",
                 "country": "Argentina",
                 "geo": {
@@ -61,7 +61,7 @@
             "name": "Jardin Du Luxembourg",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "Rue de Vaugirard, 75291",
                 "city": "Paris",
                 "country": "França",
                 "geo": {
@@ -89,7 +89,7 @@
             "name": "Praça Tiananmen",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "Dongcheng",
                 "city": "Pequim",
                 "country": "China",
                 "geo": {
@@ -103,7 +103,7 @@
             "name": "Praça Vermelha",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "Red Square, 109012",
                 "city": "Moscou",
                 "country": "Rússia",
                 "geo": {
@@ -117,7 +117,7 @@
             "name": "Plaza de Armas",
             "picture": "",
             "location": {
-                "address": "",
+                "address": "Calle Plateros, 326",
                 "city": "Cusco",
                 "country": "Peru",
                 "geo": {

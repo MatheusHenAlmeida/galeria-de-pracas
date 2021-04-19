@@ -4,7 +4,7 @@
             <mat-card-title>{{ this.praca.name }}</mat-card-title>
             <mat-divider></mat-divider>
             <mat-card-content>
-                <p>Endereço: {{ this.praca.location.address }}</p>
+                <p *ngIf="this.praca.location.address.length > 0">Endereço: {{ this.praca.location.address }}</p>
                 <p>Cidade: {{ this.praca.location.city }}</p>
                 <p>País: {{ this.praca.location.country }}</p>
                 <app-map 

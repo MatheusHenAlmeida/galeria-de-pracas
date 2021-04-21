@@ -15,6 +15,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoadingBarComponent } from './components/loading-bar/loading-bar.component';
+import { CardItemComponent } from './components/card-item/card-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoadingBarComponent } from './components/loading-bar/loading-bar.compon
     PracasListaComponent,
     PracaDetalheComponent,
     MapComponent,
-    LoadingBarComponent
+    LoadingBarComponent,
+    CardItemComponent
   ],
   imports: [
     BrowserModule,

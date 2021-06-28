@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { PracasService } from 'src/app/services/pracas.service';
 import { IPraca } from 'src/app/models/IPraca';
 import { SharedService } from 'src/app/services/shared.service';
+import "leaflet/dist/images/marker-shadow.png";
+import "leaflet/dist/images/marker-icon-2x.png";
 
 @Component({
   selector: 'app-praca-detalhe',

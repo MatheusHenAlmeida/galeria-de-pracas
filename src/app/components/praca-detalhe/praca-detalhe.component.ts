@@ -9,7 +9,10 @@ import "leaflet/dist/images/marker-icon-2x.png";
 @Component({
   selector: 'app-praca-detalhe',
   templateUrl: './praca-detalhe.component.html',
-  styleUrls: ['./praca-detalhe.component.scss']
+  styleUrls: [
+    './praca-detalhe.component.scss',
+    '../shared.styles.scss'
+  ]
 })
 export class PracaDetalheComponent implements OnInit {
   id: number;

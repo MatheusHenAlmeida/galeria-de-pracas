@@ -6,7 +6,10 @@ import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-pracas-lista',
   templateUrl: './pracas-lista.component.html',
-  styleUrls: ['./pracas-lista.component.scss']
+  styleUrls: [
+    './pracas-lista.component.scss',
+    '../shared.styles.scss'
+  ]
 })
 export class PracasListaComponent implements OnInit {
 

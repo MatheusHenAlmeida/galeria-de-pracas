@@ -1,8 +1,9 @@
 import { IAddress } from './IAddress';
+import { IPicture } from './IPicture';
 
 export interface IPraca {
     id: number;
     name: string;
-    picture: string;
+    picture: IPicture;
     location: IAddress;
 }

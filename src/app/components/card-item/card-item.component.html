@@ -1,7 +1,8 @@
 <mat-card class="card-format" [routerLink]="['praca', praca.id]">
     <mat-card-title>{{ praca.name }}</mat-card-title>
     <mat-divider></mat-divider>
-    <img mat-card-image [src]="this.getImageUrl()" alt='photo'/>
+    
+    <img mat-card-image [src]="this.getImageUrl()" width="10%" alt='photo'/>
     <mat-card-content>
         <p>teste</p>
     </mat-card-content>

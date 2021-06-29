@@ -1,21 +1,25 @@
 <div class="container">
-    <div *ngIf="this.praca != null; else loadingBar" class="formato-conteudo">
-        <mat-card class="card-format">
-            <mat-card-title>{{ this.praca.name }}</mat-card-title>
+    <div *ngIf="this.praca != null; else loadingBar" class="card-container">
+        <mat-card>
+            <mat-card-title class="card-title">{{ this.praca.name }}</mat-card-title>
             <mat-divider></mat-divider>
             <mat-card-content>
-                <p *ngIf="this.praca.location.address.length > 0">Endereço: {{ this.praca.location.address }}</p>
-                <p>Cidade: {{ this.praca.location.city }}</p>
-                <p>País: {{ this.praca.location.country }}</p>
-                <app-map 
-                [lat]="this.praca.location.geo.lat"
-                [lng]="this.praca.location.geo.lng"></app-map>
+                <div class="map-container">
+                    <app-map [lat]="this.praca.location.geo.lat" [lng]="this.praca.location.geo.lng"></app-map>
+                </div>
+                <div class="details-container">
+                    <p *ngIf="this.praca.location.address.length > 0">
+                        Endereço: {{ this.praca.location.address }}
+                    </p>
+                    <p>Cidade: {{ this.praca.location.city }}</p>
+                    <p>País: {{ this.praca.location.country }}</p>
+                </div>
             </mat-card-content>
         </mat-card>
-        
+
     </div>
 </div>
-    
-    <ng-template #loadingBar>
-        <app-loading-bar></app-loading-bar>
-    </ng-template>
+
+<ng-template #loadingBar>
+    <app-loading-bar></app-loading-bar>
+</ng-template>

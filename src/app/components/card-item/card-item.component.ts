@@ -11,8 +11,7 @@ export class CardItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   getImageUrl(): string {
     if (this.praca.picture.src.length <= 0 || this.praca.picture.src == '')

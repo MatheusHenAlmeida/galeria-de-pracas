@@ -4,6 +4,6 @@
     
     <img mat-card-image [src]="this.getImageUrl()" [alt]="this.praca.picture.alt ? this.praca.picture.src: 'photo'"/>
     <mat-card-content>
-        <p>teste</p>
+        <p>Em {{ praca.location.city }}, {{ praca.location.country }}</p>
     </mat-card-content>
 </mat-card>

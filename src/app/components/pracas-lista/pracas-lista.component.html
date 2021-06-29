@@ -1,5 +1,5 @@
 <div class="container" *ngIf="this.pracas != null; else loadingBar">
-    <div class="container-cards" *ngFor="let praca of this.pracas">
+    <div class="cards-container" *ngFor="let praca of this.pracas">
         <app-card-item [praca]="this.praca"></app-card-item>
     </div>
 </div>

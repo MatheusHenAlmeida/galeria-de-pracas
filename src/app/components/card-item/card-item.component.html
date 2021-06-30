@@ -1,9 +1,11 @@
-<mat-card class="card-container" [routerLink]="['praca', praca.id]">
-    <mat-card-title class="card-title">{{ praca.name }} - {{ praca.location.country }}</mat-card-title>
-    <mat-divider></mat-divider>
-    
-    <img mat-card-image [src]="this.getImageUrl()" [alt]="this.praca.picture.alt ? this.praca.picture.src: 'photo'"/>
-    <mat-card-content>
-        <p>Em {{ praca.location.city }}</p>
-    </mat-card-content>
-</mat-card>
+<div class="card-container">
+    <mat-card [routerLink]="['praca', praca.id]">
+        <mat-card-title class="card-title">{{ praca.name }} - {{ praca.location.country }}</mat-card-title>
+        <mat-divider></mat-divider>
+        
+        <img mat-card-image [src]="this.getImageUrl()" [alt]="this.praca.picture.alt ? this.praca.picture.src: 'photo'"/>
+        <mat-card-content>
+            <p>Em {{ praca.location.city }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

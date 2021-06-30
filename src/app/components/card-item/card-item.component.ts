@@ -4,7 +4,10 @@ import { IPraca } from 'src/app/models/IPraca';
 @Component({
   selector: 'app-card-item',
   templateUrl: './card-item.component.html',
-  styleUrls: ['./card-item.component.scss']
+  styleUrls: [
+    './card-item.component.scss',
+    '../shared.styles.scss'
+  ]
 })
 export class CardItemComponent implements OnInit {
   @Input() praca: IPraca;

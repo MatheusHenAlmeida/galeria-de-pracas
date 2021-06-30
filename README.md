@@ -19,7 +19,7 @@ Baste se rodar o comando `ng test` no diretório do projeto, que ele abrirá uma
 1. ~~Refatorar modelos~~
 2. ~~Refazer serviços~~
 3. ~~Completar lista de praças e dados do `pracas.json`~~
-4. Ajustar telas para exibir informações das praças
+4. ~~Ajustar telas para exibir informações das praças~~
 5. ~~Retirar testes antigos~~
 6. Criar testes unitários
 7. Criar testes do protractor

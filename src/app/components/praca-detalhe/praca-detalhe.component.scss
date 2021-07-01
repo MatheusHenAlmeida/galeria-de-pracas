@@ -7,6 +7,12 @@
     width: 70%;
 }
 
+@media (max-width: 500px) {
+    .card-container {
+        width: 95%;
+    }
+}
+
 .map-container {
     padding-top: 10px;
 }

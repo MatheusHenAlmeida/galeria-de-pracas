@@ -24,6 +24,6 @@ Baste se rodar o comando `ng test` no diretório do projeto, que ele abrirá uma
 6. Criar testes unitários
 7. Criar testes do protractor
 8. Atualizar `README.md` com instruções mais detalhadas
-9. Configurar responsividade da página
+9. ~~Configurar responsividade da página~~
 10. ~~Por projeto no repo profissional~~
     

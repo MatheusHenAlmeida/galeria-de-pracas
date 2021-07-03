@@ -15,8 +15,8 @@ export class MapComponent implements OnInit {
   }
 
   ngOnInit() {
-    const lng = parseFloat(this.lng); // Parsing the longitude to float
-    const lat = parseFloat(this.lat); // Parsing the latitude to float
+    const lng = parseFloat(this.lng);
+    const lat = parseFloat(this.lat);
     const map = L.map('map').setView([lat, lng], 16);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

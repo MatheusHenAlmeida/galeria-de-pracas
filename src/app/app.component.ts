@@ -10,6 +10,7 @@ export class AppComponent {
   titulo = 'Galeria de Praças';
 
   constructor(private sharedService: SharedService) {
+    // Listen the events of title's updates
     this.sharedService.changeEmitted$.subscribe((data) => this.titulo = data.titulo);
   }
 }

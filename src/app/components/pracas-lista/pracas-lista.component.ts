@@ -19,7 +19,6 @@ export class PracasListaComponent implements OnInit {
 
   ngOnInit() {
     this.pracasService.getPracas().subscribe((data: IPraca[]) => {
-      // setTimeout(() => this.pracas = data, 5000) // Para testar o loading-bar
       this.pracas = data;
     });
     this.sharedService.emitChange({ titulo : 'Galeria de Praças' });

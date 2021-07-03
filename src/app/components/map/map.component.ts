@@ -9,17 +9,18 @@ declare let L;
 export class MapComponent implements OnInit {
   @Input() lat: string;
   @Input() lng: string;
+  private ATTRIBUTION_LABEL = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
   constructor() {
   }
 
   ngOnInit() {
-    const lng = parseFloat(this.lng);
-    const lat = parseFloat(this.lat);
+    const lng = parseFloat(this.lng); // Parsing the longitude to float
+    const lat = parseFloat(this.lat); // Parsing the latitude to float
     const map = L.map('map').setView([lat, lng], 16);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      attribution: this.ATTRIBUTION_LABEL
     }).addTo(map);
 
     L.marker([lat, lng]).addTo(map);

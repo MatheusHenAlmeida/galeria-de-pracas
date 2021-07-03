@@ -13,3 +13,6 @@ Para rodar a aplicação pela primeira vez, é preciso seguir os passos abaixo, 
 2. Rodar o comando `json-server pracas.json` para subir o servidor com os dados das praças
 3. Dar o comando `ng serve -o` para buildar a aplicação e abrir o navegador na página principal
     
+## Tecnologias utilizadas
+
+A versão do Angular utilizada neste projeto foi a `v9.1.12`. Para a construção dos componentes visuais, serviços e afins, foi utilizado tecnologias populares como o Typescript, HTML e CSS. Os mapas foram feitos com a versão `v7.0.1` do Ngx-leaflet, que é uma solução para o Angular que nos permite utilizar os mapas do Leaflet dentro da aplicação.

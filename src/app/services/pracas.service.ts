@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PracasService {
-  private USER_URL = environment.user_url;
-  private PRACAS = '/pracas'
+  private BASE_URL = environment.base_url;
+  private PRACAS_PATH = '/pracas'
 
-  private PRACAS_URL = this.USER_URL.concat(this.PRACAS);
+  private PRACAS_URL = this.BASE_URL.concat(this.PRACAS_PATH);
 
   constructor(private http: HttpClient) { }
 
